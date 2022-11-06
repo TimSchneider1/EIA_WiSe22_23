@@ -1,11 +1,90 @@
-body {
-    font-size: 20px;
+html {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(Abgabe04/IMG_0266.jpeg);
+}
 
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+header {
+    background-image: url(IMG_0266.jpeg);
+    height: 400px;
+    padding-top: 100px;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+nav {
+    font-size: 25px;
+    padding: 30px 150px 0px 1050px;
+}  
+
+.inhalt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.message {
+    padding-bottom: 70px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+}
+.verteilung {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.button {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}
+
+.button:hover {
+    color: black;
+    text-decoration: underline;  
+}
+
+.clicked {
+    color: black;
+    text-decoration: underline;
+}
+
+input {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.send {
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    padding:  4px 10px 4px 10px;
+}
+
+.send:hover {
+    background-color: rgba(128, 128, 128, 0.692);
 }
