@@ -1,16 +1,18 @@
 html { 
-    background-color: white;
+    background-color: rgb(68, 68, 68);
     padding: 0px;
     margin: 0px;
-    font-family:'Press Start 2P', cursive;;
+    font-family: 'Creepster', cursive;
 }
 
 body {
+    color: rgb(181, 197, 140);
     margin: 0;
     font-size: 20px;
 }
 
 header {
+    color: black;
     background-image: url(IMG_0266.jpeg);
     height: 400px;
     padding-top: 100px;
@@ -39,6 +41,7 @@ nav {
 }  
 
 .inhalt {
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
@@ -52,6 +55,7 @@ nav {
 }
 
 footer {
+    color: black;
     background-color: #eaeaea;
     text-align: center;
 }
@@ -117,4 +121,13 @@ input::placeholder {
 .size:hover {
     transform: scale(1.1);
 }
-   
+
+.sw {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.sw:hover {
+    -webkit-filter: url(/B8E2CC66-DB56-49FA-9829-FABF50594981.jpg);
+    filter: url(/B8E2CC66-DB56-49FA-9829-FABF50594981.jpg)
+}
