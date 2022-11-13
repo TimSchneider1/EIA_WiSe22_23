@@ -2,7 +2,7 @@ html {
     background-color: rgb(68, 68, 68);
     padding: 0px;
     margin: 0px;
-    font-family: 'Creepster', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -11,15 +11,33 @@ body {
     font-size: 20px;
 }
 
-header {
-    color: black;
-    background-image: url(IMG_0266.jpeg);
-    height: 400px;
+.creepster {
+    font-family: 'Creepster', cursive;
+}
+
+ header {
+    color: black; 
     padding-top: 100px;
     
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: flex-start; 
+} 
+
+ @keyframes test {
+   from {background-image: url(3EC2C9CE-D2DB-46A9-B779-6F9C3FB32238.jpg);}
+     /* {background-image: url(IMG_1079.jpeg);}  */
+    to {background-image: url(IMG_0266.jpeg);} 
+} 
+
+.hintergrund{
+    /* background-image: url(IMG_1079.jpeg); */
+    height: 400px;
+    background-repeat: no-repeat; 
+    animation-name: test;
+    animation-duration: 5s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
 }
 
 .banner {
@@ -41,7 +59,6 @@ nav {
 }  
 
 .inhalt {
-    font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
