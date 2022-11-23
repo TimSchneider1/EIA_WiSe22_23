@@ -15,5 +15,4 @@ console.log("Das durchschnittliche Alter in "+frankreich+" beträgt "+alterFrank
 console.log("Das durchschnittliche Alter in "+deutschland+" beträgt "+alterDeutschland+" Jahre");
 console.log("Das durchschnittliche Alter in "+rumänien+" beträgt "+alterRumänien+" Jahre");
 
-// test test
 
