@@ -18,5 +18,6 @@ console.log("Das durchschnittliche Alter in "+frankreich+" beträgt "+alterFrank
 console.log("Das durchschnittliche Alter in "+deutschland+" beträgt "+alterDeutschland+" Jahre");
 console.log("Das durchschnittliche Alter in "+rumänien+" beträgt "+alterRumänien+" Jahre");
 
-console.log("Das durchschnittliche Alter aller aufgeführten Länder beträgt "+durchschnitt);
+console.log("Das durchschnittliche Alter aller aufgeführten Länder beträgt "+durchschnitt+" Jahre");
 
+// Ich habe nur eine kleine Berechnung durchgeführt, da ich nicht genügend Daten für das durchschnittliche Alter aus vergangenen Jahren finden konnte.
