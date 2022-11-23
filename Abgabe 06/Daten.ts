@@ -10,9 +10,13 @@ let alterDeutschland:number = 45.9;
 let rumänien:string = "Rumänien";
 let alterRumänien:number = 43.0;
 
+let summe:number = alterItalien+alterFrankreich+alterDeutschland+alterRumänien;
+let durchschnitt:number = summe/4;
+
 console.log("Das durchschnittliche Alter in "+italien+" beträgt "+alterItalien+" Jahre");
 console.log("Das durchschnittliche Alter in "+frankreich+" beträgt "+alterFrankreich+" Jahre");
 console.log("Das durchschnittliche Alter in "+deutschland+" beträgt "+alterDeutschland+" Jahre");
 console.log("Das durchschnittliche Alter in "+rumänien+" beträgt "+alterRumänien+" Jahre");
 
+console.log("Das durchschnittliche Alter aller aufgeführten Länder beträgt "+durchschnitt);
 
