@@ -20,4 +20,4 @@ console.log("Das durchschnittliche Alter in "+rumänien+" beträgt "+alterRumän
 
 console.log("Das durchschnittliche Alter aller aufgeführten Länder beträgt "+durchschnitt+" Jahre");
 
-// Ich habe nur eine kleine Berechnung durchgeführt, da ich nicht genügend Daten für das durchschnittliche Alter aus vergangenen Jahren finden konnte.
+// Ich habe nur eine kleine Berechnung durchgeführt, da ich nicht genügend Daten für das durchschnittliche Alter aus vergangenen Jahren finden konnte
