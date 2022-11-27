@@ -49,7 +49,7 @@ namespace A07{
 
     buttonRu.addEventListener("click", function(){
         document.getElementById("text").innerText = "Durchschnittliches Alter in Rumänien: "+alterRumänien+" Jahre";
-        document.querySelector(".chartWrapper").setAttribute('style', 'height:'+alterRumänien)
+        document.querySelector(".chart").setAttribute('style', 'height:'+alterRumänien)
     });
 
 
@@ -58,5 +58,5 @@ namespace A07{
     buttonSt.addEventListener("click", function(){
         document.getElementById("text").innerText = "Durchschnittliches Alter in allen aufgeführten Ländern: "+durchschnitt+" Jahre";
     });
-    
+
 }

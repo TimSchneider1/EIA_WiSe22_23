@@ -33,7 +33,7 @@ var A07;
     const buttonRu = document.getElementById("buttonR");
     buttonRu.addEventListener("click", function () {
         document.getElementById("text").innerText = "Durchschnittliches Alter in Rumänien: " + alterRumänien + " Jahre";
-        document.querySelector(".chartWrapper").setAttribute('style', 'height:' + alterRumänien);
+        document.querySelector(".chart").setAttribute('style', 'height:' + alterRumänien);
     });
     const buttonSt = document.getElementById("Stern");
     buttonSt.addEventListener("click", function () {
