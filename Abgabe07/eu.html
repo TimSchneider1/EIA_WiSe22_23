@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carbon Dioxide Emissions</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="daten.js"></script>
+    <script src="datenTwo.js" defer></script>
 </head>
 
 <body>
     <nav>
         <div class="row">
             <div class="wrapper">
-                <img src="images/germany.png" height="76px" class="germany">
+                <img src="images/germany.png" height="76px" . id="buttonDE" class="germany, buttonDE">
                 <h5>Deutschland</h5>
             </div>
             <div class="wrapper">
@@ -56,7 +56,7 @@
                 <h5>Finnland</h5>
             </div>
             <div class="wrapper active">
-                <img src="images/france.png" height="76px" class="france">
+                <img src="images/france.png" id="buttonF" height="76px" class="france">
                 <h5>Frankreich</h5>
             </div>
             <div class="wrapper">
@@ -72,7 +72,7 @@
                 <h5>Irland</h5>
             </div>
             <div class="wrapper">
-                <img src="images/italy.png" height="76px" class="italy">
+                <img src="images/italy.png" id="buttonI" height="76px" class="italy">
                 <h5>Italien</h5>
             </div>
             <div class="wrapper">
@@ -106,7 +106,7 @@
                 <h5>Portugal</h5>
             </div>
             <div class="wrapper">
-                <img src="images/romania.png" height="76px" class="romania">
+                <img src="images/romania.png" id="buttonR" height="76px" class="romania">
                 <h5>Rumänien</h5>
             </div>
             <div class="wrapper">
@@ -127,13 +127,20 @@
             </div>
         </div>
     </nav>
-
-    <img src="images/eu_stars.png" class="stars">
-    <h1>
-        Einwohnerzahl in der europäischen Union
-    </h1>
-
     <main>
+        <div class="chartStarWrapper">
+            <img src="images/eu_stars.png" id="Stern" class="stars">
+            
+            <div class="chartWrapper">
+                <div class="chart"></div>
+            </div>
+
+        </div>
+        
+        <h1 id="text">
+            Durchschnittliches Alter in der Europäischen Union
+        </h1>
+        
         <section>
             <h2>65,48Mio</h2>
             <p>Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022</p>
