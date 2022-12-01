@@ -1,0 +1,37 @@
+body{
+    background-color: #000000;
+}
+
+.drumpad {
+    background-color: #993131;
+    margin: 10px 10px 10px 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px
+}
+
+.drumpad:hover {
+    background-color: #a44646;
+}
+
+
+.row1 {
+    display: flex;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+}
+
+.play {
+   display: flex;
+   justify-content: center;
+}
+
