@@ -1,17 +1,25 @@
 body{
+    margin: 80px 40px 80px 40px;
     background-color: #000000;
 }
 
 .drumpad {
-    background-color: #993131;
-    margin: 10px 10px 10px 10px;
+    background-image: linear-gradient(to bottom right, #b2ffc4, #3eb65a);
+    border: none;
+    margin: 12px 12px 12px 12px;
     width: 150px;
     height: 150px;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px 10px #1e5c2d;
 }
 
 .drumpad:hover {
-    background-color: #a44646;
+    background-image: linear-gradient(to bottom right, #eaffef, #68c77e);
+    box-shadow: 4px 5px 0px 10px #338247;
+}
+
+.drumpad:active {
+    transform: translateY(4px);
 }
 
 
