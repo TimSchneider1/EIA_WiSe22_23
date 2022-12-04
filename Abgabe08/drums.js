@@ -1,8 +1,8 @@
 var A08;
 (function (A08) {
-    const pad1 = new Audio('samples/A.mp3');
-    const pad2 = new Audio('samples/C.mp3');
-    const pad3 = new Audio('samples/F.mp3');
+    const pad1 = new Audio('samples/808 FlexKick.wav');
+    const pad2 = new Audio('samples/808 FlexSnare.wav');
+    const pad3 = new Audio('samples/808 FlexHat.wav');
     const pad4 = new Audio('samples/G.mp3');
     const pad5 = new Audio('samples/hihat.mp3');
     const pad6 = new Audio('samples/kick.mp3');
@@ -11,15 +11,15 @@ var A08;
     const pad9 = new Audio('samples/snare.mp3');
     const buttonOne = document.getElementById("one");
     buttonOne.addEventListener("click", function () {
-        playSample(new Audio('samples/A.mp3'));
+        playSample(new Audio('samples/808 FlexKick.wav'));
     });
     const buttonTwo = document.getElementById("two");
     buttonTwo.addEventListener("click", function () {
-        playSample(new Audio('samples/C.mp3'));
+        playSample(new Audio('samples/808 FlexSnare.wav'));
     });
     const buttonThree = document.getElementById("three");
     buttonThree.addEventListener("click", function () {
-        playSample(new Audio('samples/F.mp3'));
+        playSample(new Audio('samples/808 FlexHat.wav'));
     });
     const buttonFour = document.getElementById("four");
     buttonFour.addEventListener("click", function () {
@@ -50,13 +50,13 @@ var A08;
         setInterval(function () {
             playSample(new Audio(arraySamples[ton]));
             ton++;
-            if (ton == 9) {
+            if (ton == 4) {
                 ton = 0;
             }
-        });
+        }, 300);
     });
     let ton = 0;
-    let arraySamples = ['samples/A.mp3', 'samples/C.mp3'];
+    let arraySamples = ['samples/808 FlexKick.wav', 'samples/808 FlexHat.wav', 'samples/808 FlexSnare.wav', 'samples/808 FlexHat.wav'];
     function playSample(widergabe) {
         widergabe.play();
     }

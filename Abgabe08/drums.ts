@@ -1,8 +1,8 @@
 namespace A08{
 
-    const pad1:HTMLAudioElement = new Audio ('samples/A.mp3');
-    const pad2:HTMLAudioElement = new Audio ('samples/C.mp3');
-    const pad3:HTMLAudioElement = new Audio ('samples/F.mp3');
+    const pad1:HTMLAudioElement = new Audio ('samples/808 FlexKick.wav');
+    const pad2:HTMLAudioElement = new Audio ('samples/808 FlexSnare.wav');
+    const pad3:HTMLAudioElement = new Audio ('samples/808 FlexHat.wav');
     const pad4:HTMLAudioElement = new Audio ('samples/G.mp3');
     const pad5:HTMLAudioElement = new Audio ('samples/hihat.mp3');
     const pad6:HTMLAudioElement = new Audio ('samples/kick.mp3');
@@ -12,17 +12,17 @@ namespace A08{
 
     const buttonOne: HTMLButtonElement = document.getElementById("one") as HTMLButtonElement;
     buttonOne.addEventListener("click", function(){
-        playSample (new Audio ('samples/A.mp3'))
+        playSample (new Audio ('samples/808 FlexKick.wav'))
     });
 
     const buttonTwo: HTMLButtonElement = document.getElementById("two") as HTMLButtonElement;
     buttonTwo.addEventListener("click", function(){
-        playSample (new Audio ('samples/C.mp3'))
+        playSample (new Audio ('samples/808 FlexSnare.wav'))
     });
 
     const buttonThree: HTMLButtonElement = document.getElementById("three") as HTMLButtonElement;
     buttonThree.addEventListener("click", function(){
-        playSample (new Audio ('samples/F.mp3'))
+        playSample (new Audio ('samples/808 FlexHat.wav'))
     });
 
     const buttonFour: HTMLButtonElement = document.getElementById("four") as HTMLButtonElement;
@@ -60,13 +60,13 @@ namespace A08{
         setInterval(function () {
             playSample(new Audio (arraySamples [ton]))
             ton++
-            if (ton==9) {ton=0}
-        })
+            if (ton==4) {ton=0}
+        }, 300)
     })
 
     let ton = 0;
 
-    let arraySamples = ['samples/A.mp3', 'samples/C.mp3']
+    let arraySamples = ['samples/808 FlexKick.wav', 'samples/808 FlexHat.wav', 'samples/808 FlexSnare.wav', 'samples/808 FlexHat.wav']
 
     function playSample(widergabe: any) {
         widergabe.play()
