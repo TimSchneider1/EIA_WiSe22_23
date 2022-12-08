@@ -56,6 +56,7 @@ namespace A08{
     });
 
     const buttonPlay: HTMLButtonElement = document.getElementById("playbutton") as HTMLButtonElement;
+
     buttonPlay.addEventListener ('click', function () {
         setInterval(function () {
             playSample(new Audio (arraySamples [ton]))
@@ -72,4 +73,14 @@ namespace A08{
         widergabe.play()
     }
 
+    const buttonRemix: HTMLButtonElement = document.getElementById("remix") as HTMLButtonElement;
+    buttonRemix.addEventListener ('click', function () {
+        
+        for (let i = 0; i <= 4; i++);
+        let myNumber = (Math.random() * 9);
+        
+        console.log()
+    });
+
+    let randomSamples = []
 }

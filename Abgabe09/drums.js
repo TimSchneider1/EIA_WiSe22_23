@@ -60,5 +60,13 @@ var A08;
     function playSample(widergabe) {
         widergabe.play();
     }
+    const buttonRemix = document.getElementById("remix");
+    buttonRemix.addEventListener('click', function () {
+        for (let i = 0; i <= 4; i++)
+            ;
+        let myNumber = (Math.random() * 9);
+        console.log();
+    });
+    let randomSamples = [];
 })(A08 || (A08 = {}));
 //# sourceMappingURL=drums.js.map
