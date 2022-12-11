@@ -45,7 +45,8 @@ var A08;
     buttonNine.addEventListener("click", function () {
         playSample(new Audio('samples/snare.mp3'));
     });
-    const buttonPlay = document.getElementById("playbutton");
+    // const buttonPlay: HTMLButtonElement = document.getElementById("playbutton") as HTMLButtonElement;
+    let buttonPlay = document.querySelector('playbutton');
     buttonPlay.addEventListener('click', function () {
         setInterval(function () {
             playSample(new Audio(arraySamples[ton]));
@@ -62,11 +63,11 @@ var A08;
     }
     const buttonRemix = document.getElementById("remix");
     buttonRemix.addEventListener('click', function () {
-        for (let i = 0; i <= 4; i++)
+        for (let i of randomSamples)
             ;
         let myNumber = (Math.random() * 9);
         console.log();
     });
-    let randomSamples = [];
+    let randomSamples = [number1, number2, number3, number4];
 })(A08 || (A08 = {}));
 //# sourceMappingURL=drums.js.map

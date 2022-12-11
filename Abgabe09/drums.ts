@@ -55,7 +55,9 @@ namespace A08{
         playSample (new Audio ('samples/snare.mp3'))
     });
 
-    const buttonPlay: HTMLButtonElement = document.getElementById("playbutton") as HTMLButtonElement;
+    // const buttonPlay: HTMLButtonElement = document.getElementById("playbutton") as HTMLButtonElement;
+
+    let buttonPlay:HTMLElement = document.querySelector('playbutton');
 
     buttonPlay.addEventListener ('click', function () {
         setInterval(function () {
@@ -65,7 +67,7 @@ namespace A08{
         }, 300)
     })
 
-    let ton = 0;
+    let ton:number = 0;
 
     let arraySamples = ['samples/808 FlexKick.wav', 'samples/808 FlexHat.wav', 'samples/808 FlexSnare.wav', 'samples/808 FlexHat.wav']
 
@@ -76,11 +78,15 @@ namespace A08{
     const buttonRemix: HTMLButtonElement = document.getElementById("remix") as HTMLButtonElement;
     buttonRemix.addEventListener ('click', function () {
         
-        for (let i = 0; i <= 4; i++);
-        let myNumber = (Math.random() * 9);
+        let randomSamples = []
+
+        for (let i:number = 0; i<=randomSamples.length;i++ );
+        let number1 = (Math.random() * 9);
+        let number2 = (Math.random() * 9);
+        let number3 = (Math.random() * 9);
+        let number4 = (Math.random() * 9);
         
         console.log()
     });
 
-    let randomSamples = []
 }
