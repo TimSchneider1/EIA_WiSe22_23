@@ -49,10 +49,6 @@ body{
     margin: 50px 10px 10px 10px;
 } 
 
-.play:active {
-    display: none;
-}
-
 .remixer {
    display: flex; 
    justify-content: center;

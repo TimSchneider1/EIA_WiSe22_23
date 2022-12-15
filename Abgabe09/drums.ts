@@ -19,22 +19,22 @@ namespace A09{
 
     const buttonFour: HTMLButtonElement = document.getElementById("four") as HTMLButtonElement;
     buttonFour.addEventListener("click", function(){
-        playSample (new Audio ('A.mp3'))
+        playSample (new Audio ('samples/A.mp3'))
     });
 
     const buttonFive: HTMLButtonElement = document.getElementById("five") as HTMLButtonElement;
     buttonFive.addEventListener("click", function(){
-        playSample (new Audio ('C.mp3'))
+        playSample (new Audio ('samples/C.mp3'))
     });
 
     const buttonSix: HTMLButtonElement = document.getElementById("six") as HTMLButtonElement;
     buttonSix.addEventListener("click", function(){
-        playSample (new Audio ('F.mp3'))
+        playSample (new Audio ('samples/F.mp3'))
     });
 
     const buttonSeven: HTMLButtonElement = document.getElementById("seven") as HTMLButtonElement;
     buttonSeven.addEventListener("click", function(){
-        playSample (new Audio ('G.mp3'))
+        playSample (new Audio ('samples/G.mp3'))
     });
 
     const buttonEight: HTMLButtonElement = document.getElementById("eight") as HTMLButtonElement;
@@ -44,17 +44,33 @@ namespace A09{
 
     const buttonNine: HTMLButtonElement = document.getElementById("nine") as HTMLButtonElement;
     buttonNine.addEventListener("click", function(){
-        playSample (new Audio ('laugh-2.mp3'))
+        playSample (new Audio ('samples/laugh-2.mp3'))
     });
 
 
+    const playButton: HTMLButtonElement = document.getElementById("btnPlay") as HTMLButtonElement;
+    playButton.addEventListener("click", function(){
+        playBeat()
+    });
+
+    const remixButton: HTMLButtonElement = document.getElementById("remix") as HTMLButtonElement;
+    remixButton.addEventListener("click", function(){
+        remixer()
+    });
+
+    const stopButton: HTMLButtonElement = document.getElementById("btnStop") as HTMLButtonElement;
+    stopButton.addEventListener("click", function(){
+        stopRemixer()
+    });
+
+    
     let samplesBeat:string [] = [Samples[0],Samples[2],Samples[1],Samples[2]];
 
     function playSample(widergabe: any) {
         widergabe.play()
     }
 
-    let ton:number = 0
+    let ton:number = 0;
 
     function playBeat(): void {
         setInterval(function () {
@@ -64,27 +80,23 @@ namespace A09{
              }, 300)
     }
 
-    let playbutton1 = document.getElementById('btn1') as HTMLButtonElement;
+    let sounds:HTMLAudioElement[]= [new Audio ('samples/808 FlexKick.wav'),new Audio ('samples/808 FlexSnare.wav'), new Audio('samples/808 FlexHat.wav')];
 
-    let playbutton2 = document.getElementById('btn2') as HTMLButtonElement;
-
-    playbutton1.addEventListener('click',()=>{
-        let tempcont = playbutton1.innerHTML;
+    function remixer (): void {
+        if (ton==0){
+            ton=setInterval(function(){
+                let mixedNumbers = Math.floor(sounds.length*Math.random())
+                playSample(sounds[mixedNumbers])
+                console.log(mixedNumbers)
+            }, 300)
+        }
         
-
-    })
-
-
-
-    let stopPlay:HTMLElement = document.querySelector(".play");
-
-    if (stopPlay.classList.contains('active')) {
-        stopPlay.classList.remove('active')
     }
-    else (stopPlay.classList.add('active'))
-}
 
-
+    function stopRemixer (): void {
+        clearInterval(ton)
+        ton=0
+    }
 
 
 
@@ -232,5 +244,4 @@ namespace A09{
 //     //     console.log()
 //     // });
 
-// }
-
+}
