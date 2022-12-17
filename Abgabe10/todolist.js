@@ -1,15 +1,24 @@
 var A10;
 (function (A10) {
-    let aufgabe1 = {
-        name: "test",
-        done: false,
-        delete: false,
-    };
-    const input = document.querySelector("#textinput").ariaValueText;
+    const input = document.getElementById('textinput');
+    const textinput = input.value;
+    function newTask(input) {
+        return {
+            name: input.name,
+            done: input.done,
+            delete: input.delete,
+        };
+    }
+    let counter = 0;
     const adder = document.getElementById("taskAddBtn");
-    adder.addEventListener('click', function () {
-        const input = document.querySelector("#textinput").ariaValueText;
-        console.log('');
+    adder.addEventListener("click", function () {
+        const taskNew = newTask({ name: input.value, done: false, delete: false });
+        console.log(taskNew);
+        const clearLine = document.getElementById("taslAddBtn");
+        input.value = '';
+        counter++;
+        const counting = document.getElementById('currentTasks');
+        counting.textContent = String(counter);
     });
 })(A10 || (A10 = {}));
 //# sourceMappingURL=todolist.js.map

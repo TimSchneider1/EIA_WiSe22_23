@@ -5,19 +5,33 @@ namespace A10{
         done: boolean;
         delete: boolean;
     }
+    
+    const input = document.getElementById('textinput') as HTMLInputElement;
+    const textinput = input.value;
 
-    let aufgabe1:list = {
-        name: "test",
-        done: false,
-        delete: false,
+    function newTask (input: list):
+    list{
+        return {
+            name: input.name,
+            done: input.done,
+            delete: input.delete,
+        };
+        
     }
-    
-    
-    const input = document.querySelector("#textinput").ariaValueText;
+
+    let counter:number = 0;
 
     const adder: HTMLButtonElement = document.getElementById("taskAddBtn") as HTMLButtonElement;
-    adder.addEventListener('click', function(){
-        const input = document.querySelector("#textinput").ariaValueText;
-        console.log('')
+    adder.addEventListener("click", function (){
+        const taskNew = newTask ({name: input.value, done: false, delete: false});
+        console.log(taskNew);
+        const clearLine = document.getElementById("taslAddBtn") as HTMLInputElement;
+        input.value = '';
+        counter++;
+        const counting = document.getElementById('currentTasks') as HTMLElement;
+        counting.textContent = String(counter);
+        
     })
+
+    
 }
