@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="todolist.js"defer></script>
 </head>
 <body>
 <h3>ToDo App</h3>
 
-<div id="currentTasks"></div>
+<div id="currentTasks" class="counterStyle">0</div>
 
 <textarea name="text" id="textinput" placeholder="Add a new task"></textarea>
 
 <button id="taskAddBtn">add task</button>
+
+<div id="newTaskAdded"></div>
+
+<p class="fas fa-trash-alt"></p>
     
 </body>
 </html>

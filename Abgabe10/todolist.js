@@ -12,13 +12,17 @@ var A10;
     let counter = 0;
     const adder = document.getElementById("taskAddBtn");
     adder.addEventListener("click", function () {
-        const taskNew = newTask({ name: input.value, done: false, delete: false });
+        let taskNew = newTask({ name: input.value, done: false, delete: false });
         console.log(taskNew);
-        const clearLine = document.getElementById("taslAddBtn");
-        input.value = '';
         counter++;
         const counting = document.getElementById('currentTasks');
         counting.textContent = String(counter);
+        let element = document.createElement('div');
+        element.appendChild(new Text(input.value));
+        let body = document.getElementById("newTaskAdded");
+        body.appendChild(element);
+        const clearLine = document.getElementById("takAddBtn");
+        input.value = '';
     });
 })(A10 || (A10 = {}));
 //# sourceMappingURL=todolist.js.map

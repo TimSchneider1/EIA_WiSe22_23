@@ -23,15 +23,21 @@ namespace A10{
 
     const adder: HTMLButtonElement = document.getElementById("taskAddBtn") as HTMLButtonElement;
     adder.addEventListener("click", function (){
-        const taskNew = newTask ({name: input.value, done: false, delete: false});
+        let taskNew = newTask ({name: input.value, done: false, delete: false});
         console.log(taskNew);
-        const clearLine = document.getElementById("taslAddBtn") as HTMLInputElement;
-        input.value = '';
+        
         counter++;
         const counting = document.getElementById('currentTasks') as HTMLElement;
         counting.textContent = String(counter);
         
-    })
+        let element = document.createElement('div')
+        element.appendChild(new Text(input.value))
+        let body = document.getElementById("newTaskAdded");
+        body.appendChild(element);
 
+        const clearLine = document.getElementById("takAddBtn") as HTMLInputElement;
+        input.value = '';
+    }) 
+    
     
 }
