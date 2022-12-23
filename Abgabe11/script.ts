@@ -165,7 +165,7 @@ function toggleCheckState(index: number): void {
      * Alternativ könnte man hier natürlich auch andere Schreibweisen (wie sie im
      * Kurs behandelt wurden) nutzen.
      */
-    todosChecked[index] = !todosChecked[index];
+    newTask[index].checked = !newTask[index].checked;
 
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
@@ -184,8 +184,9 @@ function deleteTodo(index: number): void {
      * Jetzt muss diese Stelle beider Arrays gelöscht werden,
      * das ToDo-Text-Array und das Checked/Unchecked-Array
      */
-    todosText.splice(index, 1);
-    todosChecked.splice(index, 1);
+
+
+    newTask.splice(index,1);
     
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
